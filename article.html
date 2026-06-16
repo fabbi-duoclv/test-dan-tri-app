@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài viết - Nhịp Sống 24h</title>
+  <meta name="description" content="Chi tiết bài viết - Nhịp Sống 24h." />
+  <link rel="preconnect" href="https://picsum.photos" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__meta">
+        <span id="today"></span>
+        <span>Hà Nội 28°C</span>
+      </div>
+      <div class="topbar__links">
+        <a href="#">Đăng nhập</a>
+        <a href="#">RSS</a>
+        <a href="#">Liên hệ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Nhịp Sống 24h - Trang chủ">
+        <span class="brand__mark">N</span>
+        <span>Nhịp Sống 24h</span>
+        <span class="brand__tag">Tin nhanh mỗi ngày</span>
+      </a>
+      <form class="search" role="search" onsubmit="return false">
+        <label class="visually-hidden" for="q">Tìm kiếm</label>
+        <input id="q" type="search" placeholder="Tìm kiếm tin tức..." />
+        <button type="submit" aria-label="Tìm kiếm">🔍</button>
+      </form>
+      <div class="hotline">Đường dây nóng<br /><strong>0901 234 567</strong></div>
+    </div>
+  </header>
+
+  <!-- Main nav -->
+  <nav class="main-nav" aria-label="Chuyên mục">
+    <div class="container">
+      <button class="nav-toggle" aria-expanded="false" aria-label="Mở menu">☰</button>
+      <ul data-nav>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="category.html?cat=xa-hoi">Xã hội</a></li>
+        <li><a href="category.html?cat=the-gioi">Thế giới</a></li>
+        <li><a href="category.html?cat=kinh-doanh">Kinh doanh</a></li>
+        <li><a href="category.html?cat=the-thao">Thể thao</a></li>
+        <li><a href="category.html?cat=giai-tri">Giải trí</a></li>
+        <li><a href="category.html?cat=cong-nghe">Công nghệ</a></li>
+        <li><a href="category.html?cat=suc-khoe">Sức khỏe</a></li>
+        <li><a href="category.html?cat=giao-duc">Giáo dục</a></li>
+        <li><a href="category.html?cat=doi-song">Đời sống</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Đường dẫn">
+      <a href="index.html">Trang chủ</a><span>›</span>
+      <a href="#" data-crumb-cat>Chuyên mục</a>
+    </nav>
+
+    <div class="layout">
+
+      <!-- ===== Article ===== -->
+      <article class="article">
+        <span class="article__cat" data-article-cat>Chuyên mục</span>
+        <h1 class="article__title" data-article-title>Đang tải bài viết…</h1>
+        <p class="article__sapo" data-article-sapo></p>
+
+        <div class="article__meta">
+          <span data-article-date></span>
+          <span data-article-author></span>
+          <span data-article-views></span>
+        </div>
+
+        <div class="article__body" data-article-body>
+          <figure data-article-lead></figure>
+        </div>
+
+        <p class="author" data-article-byline></p>
+
+        <div class="share" aria-label="Chia sẻ">
+          <a href="#" aria-label="Chia sẻ Facebook">f</a>
+          <a href="#" aria-label="Chia sẻ X">X</a>
+          <a href="#" aria-label="Chia sẻ Email">@</a>
+          <a href="#" aria-label="Sao chép liên kết">🔗</a>
+        </div>
+
+        <div class="tags" data-article-tags></div>
+
+        <!-- Related -->
+        <div class="section-head"><h2>Tin liên quan</h2></div>
+        <ul class="news-list" data-related></ul>
+      </article>
+
+      <!-- ===== Sidebar ===== -->
+      <aside class="sidebar" aria-label="Tin xem nhiều và mới nhất">
+        <div class="widget" data-tabs>
+          <div class="tabs" role="tablist" aria-label="Đọc nhiều / Mới nhất">
+            <button role="tab" id="tab-read" aria-controls="panel-read" aria-selected="true">Đọc nhiều</button>
+            <button role="tab" id="tab-new" aria-controls="panel-new" aria-selected="false">Mới nhất</button>
+          </div>
+          <div class="widget__body">
+            <ul class="rank-list tab-panel" id="panel-read" role="tabpanel" aria-labelledby="tab-read" data-rank="read"></ul>
+            <ul class="rank-list tab-panel" id="panel-new" role="tabpanel" aria-labelledby="tab-new" data-rank="new" hidden></ul>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand__mark">N</span><span>Nhịp Sống 24h</span></a>
+          <p>Tin tức nhanh, chính xác, cập nhật 24/7. Đây là bản template demo, nội dung và hình ảnh chỉ mang tính minh họa.</p>
+        </div>
+        <div>
+          <h4>Chuyên mục</h4>
+          <ul>
+            <li><a href="category.html?cat=xa-hoi">Xã hội</a></li>
+            <li><a href="category.html?cat=kinh-doanh">Kinh doanh</a></li>
+            <li><a href="category.html?cat=the-thao">Thể thao</a></li>
+            <li><a href="category.html?cat=cong-nghe">Công nghệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Về chúng tôi</h4>
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Quảng cáo</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Theo dõi</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Nhịp Sống 24h — Template demo.</span>
+        <span>Thiết kế tham khảo bố cục báo điện tử.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var d = new Date();
+      var days = ["Chủ nhật","Thứ Hai","Thứ Ba","Thứ Tư","Thứ Năm","Thứ Sáu","Thứ Bảy"];
+      var el = document.getElementById("today");
+      if (el) el.textContent = days[d.getDay()] + ", " + d.toLocaleDateString("vi-VN");
+    })();
+  </script>
+  <script src="js/articles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
