@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ảnh - Nhịp Sống 24h</title>
+  <meta name="description" content="Phóng sự ảnh, chùm ảnh và khoảnh khắc thời sự - Nhịp Sống 24h." />
+  <link rel="preconnect" href="https://picsum.photos" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__meta">
+        <span id="today"></span>
+        <span>Hà Nội 28°C</span>
+      </div>
+      <div class="topbar__links">
+        <a href="#">Đăng nhập</a>
+        <a href="#">RSS</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Nhịp Sống 24h - Trang chủ">
+        <span class="brand__mark">N</span>
+        <span>Nhịp Sống 24h</span>
+        <span class="brand__tag">Tin nhanh mỗi ngày</span>
+      </a>
+      <form class="search" role="search" onsubmit="return false">
+        <label class="visually-hidden" for="q">Tìm kiếm</label>
+        <input id="q" type="search" placeholder="Tìm kiếm tin tức..." />
+        <button type="submit" aria-label="Tìm kiếm">🔍</button>
+      </form>
+      <div class="hotline">Đường dây nóng<br /><strong>0901 234 567</strong></div>
+    </div>
+  </header>
+
+  <!-- Main nav -->
+  <nav class="main-nav" aria-label="Chuyên mục">
+    <div class="container">
+      <button class="nav-toggle" aria-expanded="false" aria-label="Mở menu">☰</button>
+      <ul data-nav>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="category.html?cat=xa-hoi">Xã hội</a></li>
+        <li><a href="category.html?cat=the-gioi">Thế giới</a></li>
+        <li><a href="category.html?cat=kinh-doanh">Kinh doanh</a></li>
+        <li><a href="category.html?cat=the-thao">Thể thao</a></li>
+        <li><a href="category.html?cat=giai-tri">Giải trí</a></li>
+        <li><a href="category.html?cat=cong-nghe">Công nghệ</a></li>
+        <li><a href="category.html?cat=suc-khoe">Sức khỏe</a></li>
+        <li><a href="category.html?cat=giao-duc">Giáo dục</a></li>
+        <li><a href="category.html?cat=doi-song">Đời sống</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="anh.html" aria-current="page">Ảnh</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Đường dẫn">
+      <a href="index.html">Trang chủ</a><span>›</span><span>Ảnh</span>
+    </nav>
+
+    <header class="page-hero">
+      <span class="page-hero__eyebrow">📷 Phóng sự ảnh</span>
+      <h1>Ảnh</h1>
+      <p>Những khoảnh khắc thời sự kể bằng hình ảnh — từ nhịp sống đô thị đến các sự kiện nổi bật trong tuần.</p>
+    </header>
+
+    <section class="gallery" aria-label="Chùm ảnh thời sự">
+      <a class="gallery__item" href="article.html?id=metro-so-3">
+        <img src="https://picsum.photos/seed/galmetro/600/800" alt="Công trường metro" loading="eager" />
+        <span class="gallery__count">📷 12</span>
+        <span class="gallery__cap">Đại công trường tuyến metro số 3 ngày khởi công</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=du-lich-he">
+        <img src="https://picsum.photos/seed/galtravel/600/420" alt="Du lịch hè" loading="lazy" />
+        <span class="gallery__count">📷 18</span>
+        <span class="gallery__cap">Bãi biển kín khách trong cao điểm du lịch hè</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=clb-thang">
+        <img src="https://picsum.photos/seed/galmatch/600/600" alt="Trận đấu" loading="lazy" />
+        <span class="gallery__count">📷 24</span>
+        <span class="gallery__cap">Cầu trường vỡ òa với bàn thắng phút bù giờ</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=ban-tru">
+        <img src="https://picsum.photos/seed/galbantru/600/760" alt="Lớp học bán trú" loading="lazy" />
+        <span class="gallery__count">📷 9</span>
+        <span class="gallery__cap">Bữa cơm bán trú ấm áp nơi trường vùng cao</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=sat-lo">
+        <img src="https://picsum.photos/seed/galsatlo/600/440" alt="Di dời dân" loading="lazy" />
+        <span class="gallery__count">📷 15</span>
+        <span class="gallery__cap">Hành trình di dời người dân khỏi vùng sạt lở</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=xe-dien">
+        <img src="https://picsum.photos/seed/galev/600/680" alt="Xe điện" loading="lazy" />
+        <span class="gallery__count">📷 11</span>
+        <span class="gallery__cap">Cận cảnh mẫu xe điện đô thị vừa ra mắt</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=gia-vang">
+        <img src="https://picsum.photos/seed/galgold/600/500" alt="Giá vàng" loading="lazy" />
+        <span class="gallery__count">📷 7</span>
+        <span class="gallery__cap">Người dân xếp hàng giao dịch khi giá vàng tăng</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=du-lich-he">
+        <img src="https://picsum.photos/seed/galfood/600/620" alt="Ẩm thực" loading="lazy" />
+        <span class="gallery__count">📷 20</span>
+        <span class="gallery__cap">Sắc màu ẩm thực đường phố ngày hè</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=ai-y-te">
+        <img src="https://picsum.photos/seed/galai/600/400" alt="AI y tế" loading="lazy" />
+        <span class="gallery__count">📷 8</span>
+        <span class="gallery__cap">Phòng đọc phim ứng dụng trí tuệ nhân tạo</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=tay-vot">
+        <img src="https://picsum.photos/seed/galtennis/600/720" alt="Quần vợt" loading="lazy" />
+        <span class="gallery__count">📷 16</span>
+        <span class="gallery__cap">Khoảnh khắc bùng nổ của tay vợt trẻ</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=xuat-khau">
+        <img src="https://picsum.photos/seed/galexport/600/460" alt="Xuất khẩu" loading="lazy" />
+        <span class="gallery__count">📷 10</span>
+        <span class="gallery__cap">Nhộn nhịp cảng hàng mùa cao điểm xuất khẩu</span>
+      </a>
+      <a class="gallery__item" href="article.html?id=phat-giao-thong">
+        <img src="https://picsum.photos/seed/galtraffic/600/560" alt="Giao thông" loading="lazy" />
+        <span class="gallery__count">📷 13</span>
+        <span class="gallery__cap">Một ngày trên những tuyến phố đông đúc</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand__mark">N</span><span>Nhịp Sống 24h</span></a>
+          <p>Tin tức nhanh, chính xác, cập nhật 24/7. Đây là bản template demo, nội dung và hình ảnh chỉ mang tính minh họa.</p>
+        </div>
+        <div>
+          <h4>Chuyên mục</h4>
+          <ul>
+            <li><a href="category.html?cat=xa-hoi">Xã hội</a></li>
+            <li><a href="category.html?cat=kinh-doanh">Kinh doanh</a></li>
+            <li><a href="category.html?cat=the-thao">Thể thao</a></li>
+            <li><a href="category.html?cat=cong-nghe">Công nghệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="anh.html">Ảnh</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Theo dõi</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Nhịp Sống 24h — Template demo.</span>
+        <span>Thiết kế tham khảo bố cục báo điện tử.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var d = new Date();
+      var days = ["Chủ nhật","Thứ Hai","Thứ Ba","Thứ Tư","Thứ Năm","Thứ Sáu","Thứ Bảy"];
+      var el = document.getElementById("today");
+      if (el) el.textContent = days[d.getDay()] + ", " + d.toLocaleDateString("vi-VN");
+    })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

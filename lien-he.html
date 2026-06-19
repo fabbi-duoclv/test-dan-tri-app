@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chuyên mục - Nhịp Sống 24h</title>
-  <meta name="description" content="Tin tức theo chuyên mục - Nhịp Sống 24h." />
-  <link rel="preconnect" href="https://picsum.photos" />
+  <title>Liên hệ - Nhịp Sống 24h</title>
+  <meta name="description" content="Liên hệ toà soạn Nhịp Sống 24h - gửi tin, góp ý hoặc hợp tác quảng cáo." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -66,43 +65,67 @@
 
   <main class="container">
     <nav class="breadcrumb" aria-label="Đường dẫn">
-      <a href="index.html">Trang chủ</a><span>›</span>
-      <span data-cat-name>Chuyên mục</span>
+      <a href="index.html">Trang chủ</a><span>›</span><span>Liên hệ</span>
     </nav>
 
-    <div class="layout">
+    <header class="page-hero">
+      <span class="page-hero__eyebrow">Kết nối</span>
+      <h1>Liên hệ toà soạn</h1>
+      <p>Có tin nóng, góp ý hay nhu cầu hợp tác? Hãy để lại lời nhắn — chúng tôi luôn lắng nghe bạn đọc.</p>
+    </header>
 
-      <!-- ===== Article list ===== -->
-      <div class="main-col">
-        <div class="section-head"><h2 data-cat-name>Chuyên mục</h2></div>
+    <div class="contact-grid">
+      <!-- Info -->
+      <ul class="info-card" aria-label="Thông tin liên hệ">
+        <li>
+          <span class="ico" aria-hidden="true">📍</span>
+          <div><b>Địa chỉ</b><span>Số 24 phố Nhịp Sống, Quận Trung Tâm, Hà Nội</span></div>
+        </li>
+        <li>
+          <span class="ico" aria-hidden="true">☎️</span>
+          <div><b>Đường dây nóng</b><span>0901 234 567 (8:00 – 22:00 hằng ngày)</span></div>
+        </li>
+        <li>
+          <span class="ico" aria-hidden="true">✉️</span>
+          <div><b>Email</b><span>toasoan@nhipsong24h.demo</span></div>
+        </li>
+        <li>
+          <span class="ico" aria-hidden="true">📢</span>
+          <div><b>Hợp tác quảng cáo</b><span>quangcao@nhipsong24h.demo</span></div>
+        </li>
+      </ul>
 
-        <!-- Featured of the category (rendered by JS) -->
-        <article class="hero__lead" data-cat-lead style="margin-bottom: 24px;"></article>
-
-        <ul class="news-list" data-cat-list>
-          <!-- JS sẽ chèn danh sách bài viết tại đây -->
-        </ul>
-
-        <div style="text-align:center; margin: 28px 0;">
-          <a href="#" class="tag" style="border:1px solid var(--color-border); padding:10px 22px; border-radius:999px;">Xem thêm »</a>
-        </div>
-      </div>
-
-      <!-- ===== Sidebar ===== -->
-      <aside class="sidebar" aria-label="Tin xem nhiều và mới nhất">
-        <div class="widget" data-tabs>
-          <div class="tabs" role="tablist" aria-label="Đọc nhiều / Mới nhất">
-            <button role="tab" id="tab-read" aria-controls="panel-read" aria-selected="true">Đọc nhiều</button>
-            <button role="tab" id="tab-new" aria-controls="panel-new" aria-selected="false">Mới nhất</button>
+      <!-- Form -->
+      <form class="form" id="contact-form" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="name">Họ và tên</label>
+            <input id="name" name="name" type="text" placeholder="Nguyễn Văn A" required />
           </div>
-          <div class="widget__body">
-            <ul class="rank-list tab-panel" id="panel-read" role="tabpanel" aria-labelledby="tab-read" data-rank="read"></ul>
-            <ul class="rank-list tab-panel" id="panel-new" role="tabpanel" aria-labelledby="tab-new" data-rank="new" hidden></ul>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="ban@example.com" required />
           </div>
         </div>
-      </aside>
-
+        <div class="field">
+          <label for="topic">Chủ đề</label>
+          <select id="topic" name="topic">
+            <option value="tin">Gửi tin / nguồn tin</option>
+            <option value="gopy">Góp ý nội dung</option>
+            <option value="quangcao">Hợp tác quảng cáo</option>
+            <option value="khac">Khác</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Nội dung</label>
+          <textarea id="message" name="message" placeholder="Bạn muốn chia sẻ điều gì?" required></textarea>
+        </div>
+        <button class="btn" type="submit">Gửi lời nhắn</button>
+        <p class="form__note" id="form-note" hidden role="status">✅ Cảm ơn bạn! Lời nhắn đã được ghi nhận (bản demo).</p>
+      </form>
     </div>
+
+    <div class="map-embed" role="img" aria-label="Bản đồ minh hoạ vị trí toà soạn">Bản đồ minh hoạ vị trí toà soạn</div>
   </main>
 
   <!-- Footer -->
@@ -123,12 +146,12 @@
           </ul>
         </div>
         <div>
-          <h4>Về chúng tôi</h4>
+          <h4>Khám phá</h4>
           <ul>
-            <li><a href="#">Giới thiệu</a></li>
-            <li><a href="#">Liên hệ</a></li>
-            <li><a href="#">Quảng cáo</a></li>
-            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="anh.html">Ảnh</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
           </ul>
         </div>
         <div>
@@ -153,9 +176,20 @@
       var days = ["Chủ nhật","Thứ Hai","Thứ Ba","Thứ Tư","Thứ Năm","Thứ Sáu","Thứ Bảy"];
       var el = document.getElementById("today");
       if (el) el.textContent = days[d.getDay()] + ", " + d.toLocaleDateString("vi-VN");
+
+      // Demo contact form: validate then show a confirmation note (no backend)
+      var form = document.getElementById("contact-form");
+      var note = document.getElementById("form-note");
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (!form.checkValidity()) { form.reportValidity(); return; }
+          if (note) note.hidden = false;
+          form.reset();
+        });
+      }
     })();
   </script>
-  <script src="js/articles.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

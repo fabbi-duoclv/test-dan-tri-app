@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video - Nhịp Sống 24h</title>
+  <meta name="description" content="Video tin tức, phóng sự và bản tin nhanh - Nhịp Sống 24h." />
+  <link rel="preconnect" href="https://picsum.photos" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__meta">
+        <span id="today"></span>
+        <span>Hà Nội 28°C</span>
+      </div>
+      <div class="topbar__links">
+        <a href="#">Đăng nhập</a>
+        <a href="#">RSS</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Nhịp Sống 24h - Trang chủ">
+        <span class="brand__mark">N</span>
+        <span>Nhịp Sống 24h</span>
+        <span class="brand__tag">Tin nhanh mỗi ngày</span>
+      </a>
+      <form class="search" role="search" onsubmit="return false">
+        <label class="visually-hidden" for="q">Tìm kiếm</label>
+        <input id="q" type="search" placeholder="Tìm kiếm tin tức..." />
+        <button type="submit" aria-label="Tìm kiếm">🔍</button>
+      </form>
+      <div class="hotline">Đường dây nóng<br /><strong>0901 234 567</strong></div>
+    </div>
+  </header>
+
+  <!-- Main nav -->
+  <nav class="main-nav" aria-label="Chuyên mục">
+    <div class="container">
+      <button class="nav-toggle" aria-expanded="false" aria-label="Mở menu">☰</button>
+      <ul data-nav>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="category.html?cat=xa-hoi">Xã hội</a></li>
+        <li><a href="category.html?cat=the-gioi">Thế giới</a></li>
+        <li><a href="category.html?cat=kinh-doanh">Kinh doanh</a></li>
+        <li><a href="category.html?cat=the-thao">Thể thao</a></li>
+        <li><a href="category.html?cat=giai-tri">Giải trí</a></li>
+        <li><a href="category.html?cat=cong-nghe">Công nghệ</a></li>
+        <li><a href="category.html?cat=suc-khoe">Sức khỏe</a></li>
+        <li><a href="category.html?cat=giao-duc">Giáo dục</a></li>
+        <li><a href="category.html?cat=doi-song">Đời sống</a></li>
+        <li><a href="video.html" aria-current="page">Video</a></li>
+        <li><a href="anh.html">Ảnh</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Đường dẫn">
+      <a href="index.html">Trang chủ</a><span>›</span><span>Video</span>
+    </nav>
+
+    <header class="page-hero">
+      <span class="page-hero__eyebrow">🎬 Multimedia</span>
+      <h1>Video</h1>
+      <p>Bản tin nhanh, phóng sự và những khoảnh khắc nổi bật trong ngày — xem bằng hình ảnh và âm thanh.</p>
+    </header>
+
+    <!-- Featured + secondary videos -->
+    <section class="video-grid video-grid--feature" aria-label="Video nổi bật">
+      <article class="video-card">
+        <a class="thumb" href="article.html?id=metro-so-3">
+          <img src="https://picsum.photos/seed/metrovid/800/450" alt="" width="800" height="450" loading="eager" />
+          <span class="video-card__live">Trực tiếp</span>
+          <span class="video-card__play" aria-hidden="true">▶</span>
+          <span class="video-card__time">12:04</span>
+        </a>
+        <h4><a href="article.html?id=metro-so-3">Toàn cảnh lễ khởi công tuyến metro số 3 và kỳ vọng của người dân nội đô</a></h4>
+        <div class="meta">Thời sự · 18.240 lượt xem</div>
+      </article>
+
+      <article class="video-card">
+        <a class="thumb" href="article.html?id=clb-thang">
+          <img src="https://picsum.photos/seed/matchvid/400/225" alt="" width="400" height="225" loading="lazy" />
+          <span class="video-card__play" aria-hidden="true">▶</span>
+          <span class="video-card__time">02:31</span>
+        </a>
+        <h4><a href="article.html?id=clb-thang">Highlight: Bàn thắng vàng phút bù giờ của CLB thành phố</a></h4>
+        <div class="meta">Thể thao · 9.870 lượt xem</div>
+      </article>
+
+      <article class="video-card">
+        <a class="thumb" href="article.html?id=xe-dien">
+          <img src="https://picsum.photos/seed/evvid/400/225" alt="" width="400" height="225" loading="lazy" />
+          <span class="video-card__play" aria-hidden="true">▶</span>
+          <span class="video-card__time">05:48</span>
+        </a>
+        <h4><a href="article.html?id=xe-dien">Trải nghiệm nhanh mẫu xe điện đô thị giá dưới 400 triệu</a></h4>
+        <div class="meta">Công nghệ · 8.940 lượt xem</div>
+      </article>
+    </section>
+
+    <div class="section-head"><h2>Mới đăng</h2><a href="index.html">Về trang chủ »</a></div>
+    <section class="video-grid" aria-label="Video mới đăng">
+      <article class="video-card">
+        <a class="thumb" href="article.html?id=sat-lo">
+          <img src="https://picsum.photos/seed/satlovid/400/225" alt="" width="400" height="225" loading="lazy" />
+          <span class="video-card__play" aria-hidden="true">▶</span>
+          <span class="video-card__time">04:12</span>
+        </a>
+        <h4><a href="article.html?id=sat-lo">Phóng sự: Hành trình di dời 5.000 hộ dân khỏi vùng sạt lở</a></h4>
+        <div class="meta">Xã hội · 6.110 lượt xem</div>
+      </article>
+      <article class="video-card">
+        <a class="thumb" href="article.html?id=tay-vot">
+          <img src="https://picsum.photos/seed/tennisvid/400/225" alt="" width="400" height="225" loading="lazy" />
+          <span class="video-card__play" aria-hidden="true">▶</span>
+          <span class="video-card__time">03:05</span>
+        </a>
+        <h4><a href="article.html?id=tay-vot">Khoảnh khắc tay vợt 19 tuổi lập kỳ tích tại giải quốc tế</a></h4>
+        <div class="meta">Thể thao · 5.640 lượt xem</div>
+      </article>
+      <article class="video-card">
+        <a class="thumb" href="article.html?id=du-lich-he">
+          <img src="https://picsum.photos/seed/travelvid/400/225" alt="" width="400" height="225" loading="lazy" />
+          <span class="video-card__play" aria-hidden="true">▶</span>
+          <span class="video-card__time">06:20</span>
+        </a>
+        <h4><a href="article.html?id=du-lich-he">Cẩm nang du lịch hè: những điểm đến đang "hot" nhất</a></h4>
+        <div class="meta">Đời sống · 6.700 lượt xem</div>
+      </article>
+      <article class="video-card">
+        <a class="thumb" href="article.html?id=ai-y-te">
+          <img src="https://picsum.photos/seed/aivid/400/225" alt="" width="400" height="225" loading="lazy" />
+          <span class="video-card__play" aria-hidden="true">▶</span>
+          <span class="video-card__time">07:55</span>
+        </a>
+        <h4><a href="article.html?id=ai-y-te">AI vào phòng khám: bác sĩ và máy móc cùng đọc phim chụp</a></h4>
+        <div class="meta">Công nghệ · 4.980 lượt xem</div>
+      </article>
+      <article class="video-card">
+        <a class="thumb" href="article.html?id=gia-vang">
+          <img src="https://picsum.photos/seed/goldvid/400/225" alt="" width="400" height="225" loading="lazy" />
+          <span class="video-card__play" aria-hidden="true">▶</span>
+          <span class="video-card__time">02:48</span>
+        </a>
+        <h4><a href="article.html?id=gia-vang">Bản tin tài chính: vì sao giá vàng tăng ba phiên liên tiếp?</a></h4>
+        <div class="meta">Kinh doanh · 11.020 lượt xem</div>
+      </article>
+      <article class="video-card">
+        <a class="thumb" href="article.html?id=ban-tru">
+          <img src="https://picsum.photos/seed/bantruvid/400/225" alt="" width="400" height="225" loading="lazy" />
+          <span class="video-card__play" aria-hidden="true">▶</span>
+          <span class="video-card__time">05:10</span>
+        </a>
+        <h4><a href="article.html?id=ban-tru">Bữa cơm bán trú và những lớp học không còn ghế trống</a></h4>
+        <div class="meta">Giáo dục · 5.410 lượt xem</div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand__mark">N</span><span>Nhịp Sống 24h</span></a>
+          <p>Tin tức nhanh, chính xác, cập nhật 24/7. Đây là bản template demo, nội dung và hình ảnh chỉ mang tính minh họa.</p>
+        </div>
+        <div>
+          <h4>Chuyên mục</h4>
+          <ul>
+            <li><a href="category.html?cat=xa-hoi">Xã hội</a></li>
+            <li><a href="category.html?cat=kinh-doanh">Kinh doanh</a></li>
+            <li><a href="category.html?cat=the-thao">Thể thao</a></li>
+            <li><a href="category.html?cat=cong-nghe">Công nghệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="anh.html">Ảnh</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Theo dõi</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Nhịp Sống 24h — Template demo.</span>
+        <span>Thiết kế tham khảo bố cục báo điện tử.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var d = new Date();
+      var days = ["Chủ nhật","Thứ Hai","Thứ Ba","Thứ Tư","Thứ Năm","Thứ Sáu","Thứ Bảy"];
+      var el = document.getElementById("today");
+      if (el) el.textContent = days[d.getDay()] + ", " + d.toLocaleDateString("vi-VN");
+    })();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

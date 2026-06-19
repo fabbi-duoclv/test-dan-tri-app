@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chuyên mục - Nhịp Sống 24h</title>
-  <meta name="description" content="Tin tức theo chuyên mục - Nhịp Sống 24h." />
-  <link rel="preconnect" href="https://picsum.photos" />
+  <title>Giới thiệu - Nhịp Sống 24h</title>
+  <meta name="description" content="Giới thiệu về Nhịp Sống 24h - tôn chỉ, đội ngũ và cam kết với bạn đọc." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -66,43 +65,42 @@
 
   <main class="container">
     <nav class="breadcrumb" aria-label="Đường dẫn">
-      <a href="index.html">Trang chủ</a><span>›</span>
-      <span data-cat-name>Chuyên mục</span>
+      <a href="index.html">Trang chủ</a><span>›</span><span>Giới thiệu</span>
     </nav>
 
-    <div class="layout">
+    <header class="page-hero">
+      <span class="page-hero__eyebrow">Về chúng tôi</span>
+      <h1>Nhịp Sống 24h</h1>
+      <p>Tin tức nhanh, chính xác và gần gũi — đồng hành cùng bạn đọc trong từng nhịp sống của ngày mới.</p>
+    </header>
 
-      <!-- ===== Article list ===== -->
-      <div class="main-col">
-        <div class="section-head"><h2 data-cat-name>Chuyên mục</h2></div>
+    <section class="stat-row" aria-label="Vài con số">
+      <div class="stat"><strong>2015</strong><span>Năm thành lập</span></div>
+      <div class="stat"><strong>120+</strong><span>Phóng viên, biên tập</span></div>
+      <div class="stat"><strong>9</strong><span>Chuyên mục chính</span></div>
+      <div class="stat"><strong>5tr+</strong><span>Lượt đọc mỗi ngày</span></div>
+    </section>
 
-        <!-- Featured of the category (rendered by JS) -->
-        <article class="hero__lead" data-cat-lead style="margin-bottom: 24px;"></article>
+    <article class="page prose">
+      <p>Nhịp Sống 24h là bản template demo mô phỏng một tờ báo điện tử hiện đại. Mọi nội dung và hình ảnh trên trang đều mang tính minh họa, nhằm thể hiện bố cục, trải nghiệm đọc và cách tổ chức thông tin của một trang tin tức thực thụ.</p>
 
-        <ul class="news-list" data-cat-list>
-          <!-- JS sẽ chèn danh sách bài viết tại đây -->
-        </ul>
+      <h2>Tôn chỉ hoạt động</h2>
+      <p>Chúng tôi hướng tới một dòng tin gọn gàng, dễ tiếp cận trên mọi thiết bị, đặt người đọc làm trung tâm. Tốc độ phải đi cùng độ chính xác, và mỗi bản tin đều cần một góc nhìn rõ ràng.</p>
+      <ul class="bullets">
+        <li><b>Nhanh:</b> cập nhật sự kiện ngay khi nó diễn ra, ưu tiên những gì bạn cần biết trước tiên.</li>
+        <li><b>Chính xác:</b> kiểm chứng nguồn tin, tách bạch giữa sự thật và bình luận.</li>
+        <li><b>Gần gũi:</b> kể câu chuyện bằng ngôn ngữ đời thường, có hình ảnh và video minh họa.</li>
+        <li><b>Đa nền tảng:</b> đọc tốt trên điện thoại, máy tính bảng và máy tính để bàn.</li>
+      </ul>
 
-        <div style="text-align:center; margin: 28px 0;">
-          <a href="#" class="tag" style="border:1px solid var(--color-border); padding:10px 22px; border-radius:999px;">Xem thêm »</a>
-        </div>
-      </div>
+      <h2>Các tuyến nội dung</h2>
+      <p>Toà soạn tổ chức tin theo các chuyên mục Xã hội, Thế giới, Kinh doanh, Thể thao, Giải trí, Công nghệ, Sức khỏe, Giáo dục và Đời sống. Bên cạnh tin chữ, chúng tôi phát triển thêm chuyên trang
+        <a href="video.html">Video</a> và <a href="anh.html">Ảnh</a> để đa dạng cách kể chuyện.</p>
 
-      <!-- ===== Sidebar ===== -->
-      <aside class="sidebar" aria-label="Tin xem nhiều và mới nhất">
-        <div class="widget" data-tabs>
-          <div class="tabs" role="tablist" aria-label="Đọc nhiều / Mới nhất">
-            <button role="tab" id="tab-read" aria-controls="panel-read" aria-selected="true">Đọc nhiều</button>
-            <button role="tab" id="tab-new" aria-controls="panel-new" aria-selected="false">Mới nhất</button>
-          </div>
-          <div class="widget__body">
-            <ul class="rank-list tab-panel" id="panel-read" role="tabpanel" aria-labelledby="tab-read" data-rank="read"></ul>
-            <ul class="rank-list tab-panel" id="panel-new" role="tabpanel" aria-labelledby="tab-new" data-rank="new" hidden></ul>
-          </div>
-        </div>
-      </aside>
-
-    </div>
+      <h2>Cam kết với bạn đọc</h2>
+      <p>Lắng nghe phản hồi là cách chúng tôi tốt lên mỗi ngày. Nếu bạn phát hiện thông tin chưa chính xác, hoặc có câu chuyện muốn chia sẻ, đừng ngần ngại
+        <a href="lien-he.html">liên hệ với toà soạn</a>. Mọi ý kiến đều được trân trọng.</p>
+    </article>
   </main>
 
   <!-- Footer -->
@@ -123,12 +121,12 @@
           </ul>
         </div>
         <div>
-          <h4>Về chúng tôi</h4>
+          <h4>Khám phá</h4>
           <ul>
-            <li><a href="#">Giới thiệu</a></li>
-            <li><a href="#">Liên hệ</a></li>
-            <li><a href="#">Quảng cáo</a></li>
-            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="anh.html">Ảnh</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+            <li><a href="lien-he.html">Liên hệ</a></li>
           </ul>
         </div>
         <div>
@@ -155,7 +153,6 @@
       if (el) el.textContent = days[d.getDay()] + ", " + d.toLocaleDateString("vi-VN");
     })();
   </script>
-  <script src="js/articles.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
