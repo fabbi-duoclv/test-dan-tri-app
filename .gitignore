@@ -32,3 +32,4 @@ yarn-error.log*
 
 # Claude Code (local settings)
 .claude/
+.gstack/
