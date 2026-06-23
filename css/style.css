@@ -77,6 +77,11 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 
+/* Thumbnails are <a> elements; they must be block-level so that
+   aspect-ratio and overflow:hidden apply (inline elements ignore both,
+   which mis-sizes images and lets text overlap them). */
+.thumb { display: block; }
+
 a {
   color: var(--color-link);
   text-decoration: none;
